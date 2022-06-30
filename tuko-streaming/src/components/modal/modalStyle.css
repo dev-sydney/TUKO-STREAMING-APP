@@ -1,0 +1,138 @@
+.modalBackdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.774);
+}
+
+.modalBackdrop .modalContainer {
+  height: 100%;
+  max-width: 700px;
+  margin: 0 2.5em;
+  position: relative;
+  z-index: 4;
+  background-color: #161616;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1em;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.modalBackdrop .modalContainer .add_btn {
+  cursor: pointer;
+}
+
+.modalBackdrop .modalContainer .exit_btn {
+  position: absolute;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.modalBackdrop .modalContainer .exit_btn :hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: 0.6s all;
+  transition: 0.6s all;
+  color: red;
+}
+
+.modalBackdrop .modalContainer .content_title {
+  color: gray;
+}
+
+.modalBackdrop .modalContainer .tiny_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+  height: 10px;
+  color: gray;
+  margin-bottom: 7px;
+  /* .details_content-year{};
+      .details_content-ageRating{};
+      .details_content-mediaType{};
+      .details_content-resolution{};
+      .details_content-vote{} */
+}
+
+.modalBackdrop .modalContainer .content_overView {
+  color: gray;
+}
+
+.modalBackdrop .modalContainer .btn_controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+  color: gray;
+  margin-top: 15px;
+}
+
+.modalBackdrop .modalContainer .btn_controls .ctrl {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.6s all;
+  transition: 0.6s all;
+}
+
+.modalBackdrop .modalContainer .video-trailer {
+  height: 394px;
+  text-align: center;
+}
+
+.modalBackdrop .modalContainer .inner {
+  padding: 0 15px;
+}
+
+.modalBackdrop .modalContainer .recoms_container {
+  /*  display: flex;
+      justify-content: space-between;
+      width: 700px;
+      overflow: auto; */
+  height: 700px;
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.modalContainer::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.modalContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modalContainer::-webkit-scrollbar-thumb {
+  /*   background: rgba(169, 169, 169, 0);
+ */
+  background: rgba(128, 128, 128, 0.315);
+  border-radius: 10px;
+}
+/*# sourceMappingURL=modalStyle.css.map */

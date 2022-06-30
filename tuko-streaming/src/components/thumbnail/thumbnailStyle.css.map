@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,UADQ,CACR,MAAM,CAAC;EACL,SAAS,EAAE,UAAU;EACrB,UAAU,EAAE,QAAQ;CACrB;;AAEH,AAAA,UAAU,CAAC,GAAG,CAAC;EACb,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "thumbnailStyle.scss"
+    ],
+    "names": [],
+    "file": "thumbnailStyle.css"
+}

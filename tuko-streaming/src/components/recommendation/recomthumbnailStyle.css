@@ -1,0 +1,78 @@
+.recomthumb {
+  height: 220px;
+  width: 150px;
+}
+
+.recomthumb .poster {
+  position: relative;
+  z-index: 4;
+}
+
+.recomthumb .wrap {
+  height: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.recomthumb .content_info {
+  background-color: black;
+  width: 100%;
+  position: relative;
+  z-index: 6;
+  -webkit-transform: translateY(-108%);
+  transform: translateY(-108%);
+  height: 100%;
+  padding-left: 10px;
+  opacity: 0;
+}
+
+.recomthumb .content_info .add_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  padding-right: 10px;
+  margin-top: 15px;
+}
+
+.recomthumb .content_info .sub_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recomthumb .content_info .sub_details .hd_btn {
+  margin-right: 20px;
+}
+
+.recomthumb .content_info .content_title {
+  margin: 20px 0 10px 0;
+  font-size: 1.3em;
+  color: white;
+}
+
+.recomthumb:hover {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  width: 310px;
+}
+
+.recomthumb:hover .poster {
+  -webkit-transition: 1.2s all;
+  transition: 1.2s all;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.recomthumb:hover .content_info {
+  -webkit-transition: 0.9s all;
+  transition: 0.9s all;
+  opacity: 0.7;
+}
+/*# sourceMappingURL=recomthumbnailStyle.css.map */

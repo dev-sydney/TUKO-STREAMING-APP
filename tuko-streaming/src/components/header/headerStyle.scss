@@ -1,0 +1,55 @@
+.header-container {
+  height: 35em;
+  position: static;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.637);
+  /* .backdrop-image {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    width: 98.5vw;
+  } */
+  .details {
+    position: relative;
+    width: 28em;
+    height: 80%;
+    left: 5%;
+    top: 10%;
+    color: lightgray;
+
+    .content-title {
+      font-size: 4rem;
+    }
+    .content-overview {
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+    }
+    .content-rating {
+      margin-top: 0.5em;
+    }
+    .content-buttons-container {
+      display: flex;
+      column-gap: 1em;
+      .btn {
+        width: 8em;
+        height: 3em;
+        border-radius: 5px;
+        outline-style: none;
+        text-align: center;
+        padding-top: 0.8em;
+        font-weight: 400;
+        cursor: pointer;
+      }
+
+      .play-btn {
+        background: rgb(99, 99, 99);
+        color: white;
+      }
+      .add-btn {
+        background: rgb(246, 38, 38);
+        color: white;
+      }
+    }
+  }
+}

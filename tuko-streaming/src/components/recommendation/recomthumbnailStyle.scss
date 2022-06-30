@@ -1,0 +1,56 @@
+.recomthumb {
+  height: 169px;
+  width: 300px;
+
+  /*  .poster {
+    z-index: 4;
+  } */
+  .wrap {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .recom_details {
+    color: darkgray;
+    background-color: black;
+    opacity: 0.4;
+    height: 100%;
+    position: relative;
+    top: 80%;
+    padding-left: 5px;
+    padding-top: 5px;
+
+    .age_rating {
+      border-radius: 2px;
+      font-size: 0.8em;
+      height: fit-content;
+    }
+
+    .overview_text {
+      width: 100%;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      padding: 0 5px;
+    }
+    .flexRow {
+      display: flex;
+      column-gap: 5px;
+      cursor: pointer;
+    }
+  }
+}
+.recomthumb:hover .recom_details {
+  top: 15%;
+  opacity: 0.85;
+  transition: 0.4s all;
+}
+.flexRow:hover .camo {
+  color: orangered;
+  transition: 0.8s all;
+}
